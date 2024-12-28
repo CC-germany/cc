@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cc-germany ! Almali_069</title>
+    <style>
+        /* Grundlegendes Styling für die Seite */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Styling für den Header (Navigation) */
+        header {
+            width: 100%;
+            height: 10vh; /* Ein Zehntel der Höhe der Seite */
+            background: linear-gradient(to right, black, white 50%, white 50%, black); /* Schwarz-zu-Weiß Übergang an allen Rändern */
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        /* "CC-Germany" Text in der Mitte des Headers */
+        header h1 {
+            color: rgb(255, 255, 255);
+            font-size: 24px;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Styling für den Hauptinhalt */
+        main {
+            padding: 20px;
+            text-align: center;
+            flex: 1; /* Stellt sicher, dass der Hauptinhalt den verfügbaren Platz ausfüllt */
+        }
+
+        /* Styling für die Produktbilder */
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .products img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .products img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Preisschild Styling */
+        .price {
+            font-size: 18px;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        /* Styling für den Support-Bereich */
+        .support {
+            background-color: #000000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .support p {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        .support a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .support a:hover {
+            text-decoration: underline;
+        }
+
+        /* Styling für den Footer */
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>CC-Germany</h1> <!-- "CC-Germany" Text -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Über uns</a></li>
+                <li><a href="Prices.html" target="_blank">Preise</a></li>
+                <li><a href="dienstleistungen.html" target="_blank">Dienstleistungen</a></li> <!-- Link zu einer anderen Website -->
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Willkommen auf CC-Germany!</h1>
+        <p>Hier können Sie mehr über unsere Produkte und Dienstleistungen erfahren.</p>
+
+        <!-- Produktbilder mit Preisen -->
+        <div class="products">
+            <div>
+                <img src="https://th.bing.com/th/id/OIP.-bzGUIu_V3LTFiW-jtGDogHaJE?w=145&h=180&c=7&r=0&o=5&pid=1.7" alt="Produkt 1">
+                <p class="price">1x CC: 79,99€</p>
+            </div>
+            <div>
+                <img src="https://i.ibb.co/19SKdWp/IMG-2758.jpg" alt="Produkt 2">
+                <p class="price">telegram picture: 0,00€</p>
+            </div>
+            <div>
+                <img src="https://i.ibb.co/7jmPGDX/IMG-2763.jpg" alt="Produkt 3">
+                <p class="price">CC Card Information: 39,99€</p>
+            </div>
+            </div>
+                <img src="data:image/png;base64,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" alt="Produkt 4">
+                <p class="price"> PP log : 9,99 </p>
+        </div>
+    </main>
+
+    <!-- Support Kasten -->
+    <div class="support">
+        <p>Benötigen Sie Hilfe? Kontaktieren Sie uns über E-Mail: <a href="mailto:feeacc74@gmail.com">feeacc74@gmail.com</a></p>
+    </div>
+
+    <!-- Footer mit Telegram-Link -->
+    <footer>
+        <p>&copy; 2024 Deine Firma. Alle Rechte vorbehalten. | <a href="https://t.me/Almali_069" target="_blank">Klick hier, um unseren Telegram-Channel zu besuchen</a></p>
+    </footer>
+
+</body>
+</html>
